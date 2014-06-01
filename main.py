@@ -4,7 +4,10 @@ import webapp2
 class MainPage(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
-        if user:
+        #if user:
+        #    greeting = ('Welcome, %s - %s! (<a href="%s">sign out</a>)' %
+        #                (user.nickname(), user.email(), users.create_logout_url('/')))
+        if user.email() == 'dancole42@gmail.com':   
             greeting = ('Welcome, %s - %s! (<a href="%s">sign out</a>)' %
                         (user.nickname(), user.email(), users.create_logout_url('/')))
         else:
