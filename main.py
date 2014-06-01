@@ -6,7 +6,7 @@ class MainPage(webapp2.RequestHandler):
         user = users.get_current_user()
         if user:
             greeting = ('Welcome, %s - %s! (<a href="%s">sign out</a>)' %
-                        (user.nickname(), user.email()), users.create_logout_url('/')))
+                        (user.nickname(), user.email(), users.create_logout_url('/')))
         else:
             greeting = ('<a href="%s">Sign in or register</a>.' %
                         users.create_login_url('/'))
