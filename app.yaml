@@ -1,13 +1,26 @@
-application: mm-report-website
+application: webapp2-user-authentication
 version: 1
 runtime: python27
 api_version: 1
-threadsafe: true
+threadsafe: yes
 
 handlers:
-- url: /.*
-  script: main.application
+- url: /signup
+  script: main.app
+  secure: always
+
+- url: /login
+  script: main.app
+  secure: always
+
+- url: /forgot
+  script: main.app
+  secure: always
+
+- url: .*
+  script: main.app
+
 
 libraries:
 - name: webapp2
-  version: latest
+  version: "2.5.1"
