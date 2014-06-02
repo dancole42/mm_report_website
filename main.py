@@ -10,11 +10,11 @@ class MainPage(webapp2.RequestHandler):
         #    greeting = ('Welcome, %s - %s! (<a href="%s">sign out</a>)' %
         #                (user.nickname(), user.email(), users.create_logout_url('/')))
         if user:
-          if user.email() in auth:   
-          greeting = ('Welcome, %s - %s! (<a href="%s">sign out</a>)' %
+            if user.email() in auth:   
+                greeting = ('Welcome, %s - %s! (<a href="%s">sign out</a>)' %
                         (user.nickname(), user.email(), users.create_logout_url('/')))
-          else:
-            greeting = ('<a href="%s">You are not authorized to access this reportt</a>.' %
+            else:
+                greeting = ('<a href="%s">You are not authorized to access this reportt</a>.' %
                         users.create_login_url('/'))
         else:
             greeting = ('<a href="%s">You must sign in to access this report</a>.' %
