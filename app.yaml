@@ -12,6 +12,9 @@ handlers:
 #- url: /_ah/login_required
 #  script: do_openid_login.app
 
+- url: /stylesheets
+  static_dir: stylesheets
+
 libraries:
 - name: webapp2
   version: latest
