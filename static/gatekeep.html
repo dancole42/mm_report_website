@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merlin HTML/CSS template">
+    <meta name="author" content="Hasan Alibegic">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <title>Consulting Report by Dan Cole</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    
+    <style>
+      html, body, .container {
+      height: 100%;
+      }
+      .container {
+          display: table;
+          vertical-align: middle;
+      }
+      .vertical-center-row {
+          display: table-cell;
+          vertical-align: middle;
+      }
+    </style>
+  </head>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--- Hide from tired old browsers that should be put to pasture.
+
+////////////////////////////////////////////////////////////////////
+///  Get your very own Gate Keeper from Professional Web Design  ///
+///  http://junior.apk.net/~jbarta/weblinks/gate_keeper/         ///
+////////////////////////////////////////////////////////////////////
+
+function goForit() {
+  var location;
+  var password;
+  password=this.document.testform.inputbox.value
+  location=password + ".html"
+  fetch(location)
+  theKeeper=window.close()
+}
+
+function fetch(location) {
+  var root;
+  if (opener.closed) {
+    root=window.open('','theKeepersGopher','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no');
+    root.location.href = location;
+  } else {
+    opener.location.href = location;
+  }
+}
+
+// End hiding --->
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+  <div class="container">
+    <div class="row vertical-center-row">
+        <div class="col-lg-12">
+            <div class="row ">
+                  <center>
+                    <B>Please enter the password you were provided. An incorrect password will direct you to a non-working page.</B><BR>
+                    &nbsp;
+                    
+                    <FORM NAME="testform">
+                      <INPUT TYPE="text" NAME="inputbox" VALUE="" size=20>
+                      <INPUT TYPE="button" NAME="button" Value="Submit Password" onClick="goForit(this.form)">
+                    </FORM>
+                  </CENTER>
+               </div>
+              </div>
+             </div>
+            </div>
+</BODY>
+
+</HTML>
